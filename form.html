@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <fieldset>
+        <legend align="center">personal details</legend>
+    
+    <!--type attribute=it is used to tell the input box what type of data to be added-->
+    <form align="center">
+        <label for="">salutation</label>
+        <br>
+        <select name="salutation" id="salu">
+            <option value="none">---none--</option>
+            <option value="Mr.">Mr.</option>
+            <option value="Miss.">Miss.</option>
+            <option value="Mrs.">Mrs.</option>
+        </select>
+        <br>
+        <br>
+        <label for="fn">firstname:</label>
+        <input type="text" id="fn" name="fname"
+        required
+        placeholder="enter your firstname"
+        minlength="3"
+        maxlength="10"
+        >
+        <br><br>
+        <label for="ln">lastname:</label>
+        <input type="text" id="ln" name="fname">
+        <br><br>
+        <label for="">gender:</label>
+        <input type="radio" name="gender" id="m">
+        <label for="m">male</label>
+        <input type="radio" name="gender" id="f">
+        <label for="f">female</label>
+        <br><br>
+        <label for="em">email:</label>
+        <input type="email" id="mail" name="em">
+
+        <br><br>
+        <label for="password">password</label>
+        <input type="password" id="pass" name="password">
+        <br><br>
+        <label for="date">date of birth:</label>
+        <input type="date" id="d" name="date" >
+        <br>
+        <br>
+        <label for="address">address:</label>
+        <br>
+        <textarea name="adress" id="add" cols="10" rows="5"></textarea>
+
+        <br><br>
+        <label for="s">skills:</label>
+        <br>
+        <label for="checkbox">java</label>
+        <input type="checkbox" id="check" name="checkbox">
+        <br>
+        <label for="checkbox">sql</label>
+        <input type="checkbox" id="check" name="checkbox">
+        <br>
+        <label for="checkbox">python</label>
+        <input type="checkbox" id="check" name="checkbox">
+        <br>
+        <label for="checkbox">web technologies</label>
+        <input type="checkbox" id="check" name="checkbox">
+        <br>
+        <label for="checkbox">selenium</label>
+        <input type="checkbox" id="check" name="checkbox">
+        <br><br>
+        <label for="f">upload resume</label>
+        <input type="file" id="file" name="f">
+        <br><br>
+        <button>
+            submit
+        </button>
+    </form>
+    </fieldset>
+</body>
+</html>
